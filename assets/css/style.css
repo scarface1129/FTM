@@ -1,0 +1,1960 @@
+:root {
+    --main-color: #089bf1;
+    --primary-color: #000;
+    --primary-light-color: #333;
+    --secondary-color: #fff;
+    --light-color: #fbfbfb;
+    --grey-color: #333;
+    --border-color: #ddd;
+    --background-color: #f5f5f5;
+}
+
+/* common */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    overflow-x: hidden;
+    color: var(--primary-color);
+    background: var(--light-color);
+}
+
+p {
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    color: var(--primary-color);
+    font-style: normal;
+    margin-bottom: 0;
+    margin-top: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-size: 36px;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    color: var(--main-color);
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus,
+button:focus {
+    border-color: transparent;
+    outline-color: transparent;
+}
+
+textarea:focus {
+    border-color: transparent;
+    outline-color: transparent;
+}
+
+hr {
+    margin: 60px 0;
+    padding: 0px;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 0px;
+}
+
+hr.style-2 {
+    border-bottom: 1px dashed var(--border-color);
+}
+
+hr.mp-0 {
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+hr.mtb-40 {
+    margin: 40px 0;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 0px;
+}
+
+label {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a,
+i,
+cite,
+em,
+var,
+address,
+dfn,
+ol,
+li,
+ul {
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.image-logo {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    margin: 100px auto;
+}
+.image-logo .img1{
+    margin: 0px;
+    width:40%;
+    height:40%;
+}
+.image-logo .img2{
+    margin-left: -70px;
+    width:40%;
+    height:40%;
+}
+.btn,
+.button {
+    background: var(--main-color);
+    border: none;
+    padding: 13px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn:hover,
+.button:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+*::-moz-selection {
+    background: #4fc1f0;
+    color: #454545;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #4fc1f0;
+    color: #454545;
+    text-shadow: none;
+}
+
+::selection {
+    background: #4fc1f0;
+    color: #454545;
+    text-shadow: none;
+}
+
+::placeholder {
+    color: #454545;
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #454545;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #454545;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #454545;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #454545;
+}
+
+.btn,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.mt-50 {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+/* .common */
+
+/* MAIN MENU CSS */
+.cryptco_menu .main-menu {
+    text-align: center;
+    list-style: none;
+}
+
+.cryptco_menu .main-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    outline: none;
+}
+
+.cryptco_menu .main-menu li a {
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.cryptco_menu .main-menu li a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    border-bottom: 5px dotted var(--main-color);
+    transition: .3s;
+}
+
+.cryptco_menu .main-menu li a:hover::before {
+    width: 100%;
+}
+
+.cryptco_menu .main-menu li:last-child a {
+    margin-right: 0px;
+}
+
+.cryptco_menu .main-menu li.current a,
+.cryptco_menu .main-menu li:hover a {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.cryptco_menu .main-menu li:hover a:before,
+.cryptco_menu .main-menu li.current a:before {
+    opacity: 1;
+}
+
+.cryptco-main-menu .logo a.main_sticky_main_l {
+    display: block;
+}
+
+.cryptco-main-menu .logo a.main_sticky_l {
+    display: none;
+}
+
+.logo-left {
+    padding: 15px 0;
+}
+
+header {
+    background: var(--primary-color);
+    box-shadow: 0 10px 10px rgb(255 255 255 / 10%);
+    position: relative;
+}
+
+.homepage header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 99;
+    background: rgb(0 0 0 / 70%);
+}
+
+header.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 99;
+    background: rgb(0 0 0 / 70%);
+    -webkit-animation: fadeInDown 1s ease-out forwards;
+    -moz-animation: fadeInDown 1s ease-out forwards;
+    -o-animation: fadeInDown 1s ease-out forwards;
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.logo img {
+    max-width: 120px;
+    width: 100%;
+}
+.margin-tops {
+    flex: none;
+}
+.container-text {
+    margin-top: 100px;
+
+}
+.container-tweet {
+    width: 50%;
+    float: left;
+}   
+.container-answer {
+    width: 50%;
+    float: left;
+}
+
+.luna-plan {
+	flex: 0 0 auto;
+	background-color: rgb(10, 10, 10);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1.5em 0em;
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+	border-radius: .4em;
+	color: var(--main-color);
+	margin-bottom: 2em;
+}
+.write_up{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.mobile_image{
+    width: 50%;
+    float: left;
+}
+.mobile_image img{
+    width: 50%;
+    margin-left: 180px; 
+}
+.coming_soon{
+    
+    width: 80%;
+    margin: 20px auto;
+    padding :20px;
+}
+.coming_soon_heading{
+    font-size: x-large;
+}
+.coming_soon_text{
+
+}
+.luna-plan-type {
+	margin: 0 0 2em 0;
+	font-size: 1.3rem;
+}
+.luna-plan-price-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.luna-plan-price-max-div,
+.luna-plan-price-min-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.luna-plan-price-max-div p,
+.luna-plan-price-min-div p {
+	margin: 0;
+}
+
+.luna-plan-price-lvl {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.luna-plan-price-lvl span {
+	font-size: 1.1rem;
+}
+
+.luna-plan-contract p {
+	display: inline
+}
+
+.luna-plan-contract {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: .5em;
+}
+
+.contract-details {
+	font-size: 1rem;
+	margin-bottom: .5em;
+	margin-top: 0;
+}
+
+.margin-top {
+    margin:100px auto;
+}
+
+.menu_area.mobile-menu {
+    display: none;
+}
+
+/*----------------------------------------------*/
+/* loader */
+/*----------------------------------------------*/
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #fff;
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.loader i {
+    animation: rotateme 1s linear 0s infinite;
+}
+
+/*==================
+CUROUSEL SLIDER AREA
+====================*/
+.single_slide {
+    left: 10%;
+}
+
+.coin-animation .coin {
+    background: url('assets/images/bubble.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transition: all 600ms;
+    opacity: 1;
+    bottom: -55px;
+}
+
+.coin-animation .coin-1 {
+    animation: coinanimation 5s linear 0s infinite;
+    background-size: 33px 33px;
+    left: 20px;
+}
+
+.coin-animation .coin-2 {
+    animation: coinanimationtwo 8s linear 0s infinite;
+    background-size: 44px 44px;
+    right: 0;
+    left: 80%;
+    margin: auto;
+}
+
+.coin-animation .coin-3 {
+    animation: coinanimation 6s linear 0s infinite;
+    background-size: 37px 37px;
+    left: 30%;
+}
+
+.coin-animation .coin-4 {
+    animation: coinanimationtwo 9s linear 0s infinite;
+    background-size: 25px 25px;
+    left: 45%;
+    bottom: -15%;
+}
+
+.coin-animation .coin-5 {
+    animation: coinanimationtwo 7s linear 0s infinite;
+    background-size: 30px 30px;
+    left: 65%;
+}
+
+.coin-animation .coin-6 {
+    animation: coinanimationtwo 4s linear 0s infinite;
+    background-size: 35px 35px;
+    left: 20%;
+}
+
+.coin-animation .coin-7 {
+    animation: coinanimation 4.2s linear 0s infinite;
+    background-size: 45px 45px;
+    left: 60%;
+}
+
+.coin-animation .coin-8 {
+    animation: coinanimationtwo 5.5s linear 0s infinite;
+    background-size: 42px 42px;
+    left: 0px;
+}
+
+.coin-animation .coin-9 {
+    animation: coinanimation 9s linear 0s infinite;
+    background-size: 47px 47px;
+    left: 50%;
+}
+
+.coin-animation .coin-10 {
+    animation: coinanimationtwo 5s linear 0s infinite;
+    background-size: 22px 22px;
+    left: 84%;
+}
+
+.coin-animation .coin-11 {
+    animation: coinanimationtwo 4.5s linear 0s infinite;
+    background-size: 47px 47px;
+    left: 37%;
+}
+
+.coin-animation .coin-12 {
+    animation: coinanimation 6.5s linear 0s infinite;
+    background-size: 17px 17px;
+    left: 35%;
+}
+
+.coin-animation .coin-13 {
+    animation: coinanimation 7.6s linear 0s infinite;
+    background-size: 55px 55px;
+    left: 25%;
+}
+
+/*keyfram*/
+@-webkit-keyframes coinanimation {
+    0% {
+        -webkit-transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1700%) rotate(720deg);
+    }
+}
+
+@-webkit-keyframes coinanimationtwo {
+    0% {
+        -webkit-transform: translateY(0%) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-1700%) rotate(-720deg);
+    }
+}
+
+.slider_text_thumb {
+    padding-bottom: 12px;
+}
+
+.slider_text_inner h1 {
+    color: var(--secondary-color);
+    font-size: 4vw;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.slider_text_inner h2 {
+    color: var(--secondary-color);
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 20px 0 40px;
+}
+
+.single_slider_icon {
+    margin-top: 30px;
+}
+
+.single_slider_icon i {
+    background: transparent;
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    margin: 0 4px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transition: .5s;
+}
+
+.single_slider_icon i:hover {
+    background: #F16722;
+    border: 1px solid #F16722;
+}
+
+.single_slider_button a {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid var(--main-color);
+}
+
+.single_slider_button a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: .5s;
+    z-index: -1;
+    border-radius: 7px;
+    background: var(--primary-color);
+}
+
+.single_slider_button a:hover {
+    color: var(--main-color);
+    background: var(--primary-color);
+}
+
+.single_slider_button :hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.cd-headline.clip span {
+    display: inline-block;
+    padding: 0 0 0;
+}
+
+.cd-headline.clip span b {
+    font-size: 2vw;
+    display: inline-block;
+    color: white;
+}
+
+/* Standard syntax */
+@keyframes mike-slider-anim {
+    0% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 40px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 10px;
+        opacity: 0;
+    }
+}
+
+/*===============================
+FOOTER Top AREA CSS
+================================*/
+footer {
+    background: var(--primary-color);
+}
+
+.footer_top h6 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin: 0 0 10px;
+}
+
+.footer-menu .menu-services li {
+    font-size: 15px;
+    padding: 5px 0;
+    display: block;
+}
+
+.footer_top a {
+    color: var(--secondary-color);
+}
+
+.footer_top a:hover {
+    color: var(--main-color);
+}
+
+.footer-menu .menu-services li:before {
+    content: "-";
+    display: inline-block;
+    color: var(--secondary-color);
+    padding-right: 10px;
+}
+
+.footer_top {
+    padding: 40px 0;
+}
+
+.footer-bottom {
+    background: #111;
+    padding: 15px 0;
+}
+
+.footer-bottom .footer_bottom_inner {
+    text-align: center;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.footer-social a {
+    width: 30px;
+    height: 30px;
+    background: var(--main-color);
+    color: var(--primary-color);
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.footer-social a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.single-store-location,
+.footer-social {
+    margin-top: 20px;
+}
+
+.single-store-location i {
+    padding-right: 5px;
+    color: var(--main-color);
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/*========================
+SCROLL TOP CSS
+=========================*/
+#scrollUp {
+    background: var(--main-color);
+    bottom: 30px;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    right: 30px;
+    text-align: center;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-animation: bounce 5s linear infinite;
+    animation: bounce 5s linear infinite;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#scrollUp i {
+    color: var(--primary-color);
+}
+
+
+/* =====================
+    Header
+===================== */
+.telephone a {
+    float: right;
+    color: var(--secondary-color);
+}
+
+.telephone a:hover {
+    color: var(--main-color);
+}
+
+.telephone i {
+    padding-right: 10px;
+}
+
+/* =====================
+    .Header
+===================== */
+
+/* =====================
+    footer
+===================== */
+.single-store-location p {
+    color: var(--secondary-color);
+}
+
+/* =====================
+    .footer
+===================== */
+
+/* =====================
+    Title
+===================== */
+.title-main {
+    margin-bottom: 30px;
+}
+
+.product-title {
+    font-size: 34px;
+    margin-bottom: 15px;
+    display: inline;
+    position: relative;
+    margin-top: 0;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.product-title:before {
+    content: "";
+    background: var(--main-color);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    z-index: -1;
+    border-radius: 0px 50px 50px 50px;
+}
+
+.title-main .title-desc {
+    color: var(--primary-light-color);
+    margin: 20px 0 0 0;
+}
+
+.title {
+    margin: 0 0 20px;
+}
+
+/* =====================
+    .Title
+===================== */
+
+/* =====================
+    Blog
+===================== */
+.owl-stage-outer,
+.owl-stage-outer {
+    padding: 10px;
+    margin: -10px;
+    margin-bottom: 40px;
+}
+
+.blog_more .btn {
+    background: var(--main-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+}
+
+.blog_more .btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.blog_section {
+    background: var(--secondary-color);
+    box-shadow: 0px 3px 10px 0 rgb(0 0 0 / 5%);
+    padding: 20px;
+}
+
+.blog-category .blog_section {
+    margin-bottom: 50px;
+}
+
+.blog_description {
+    margin-top: 20px;
+}
+
+.blog_image img {
+    width: 100%;
+}
+
+.blog_section .blog-inner-desc {
+    font-size: 15px;
+    margin-bottom: 18px;
+    margin-top: 13px;
+    color: var(--grey-color);
+}
+
+.blog_section .blog-title {
+    margin-top: 0;
+}
+
+.comment_title h4 {
+    margin: 0px 0 30px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.single_blog_info p {
+    color: var(--grey-color);
+}
+
+.single_blog_info {
+    margin-top: 20px;
+}
+
+.blog_search_info input {
+    border: 1px solid var(--border-color);
+    padding: 7px 15px;
+    vertical-align: middle;
+}
+
+.blog_search_info .btn.blog_search_btn {
+    padding: 8px 15px;
+}
+
+/* =====================
+    .Blog
+===================== */
+
+/* =====================
+    testimonial
+===================== */
+.customer_description {
+    color: var(--grey-color);
+    font-size: 16px;
+}
+
+.customer_image img {
+    max-width: 110px;
+    max-height: 110px;
+    box-shadow: 0px 1px 5px 0 rgb(0 0 0 / 10%);
+    margin: auto;
+}
+
+.customer_section {
+    background: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0px 1px 5px 0 rgb(0 0 0 / 10%);
+    /*margin: 10px 5px;*/
+}
+
+.customer_image h3.user_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* =====================
+    .testimonial
+===================== */
+
+/* =====================
+    portfolio
+===================== */
+.portfolio_img:before {
+    content: "";
+    background: url(assets/images/round.png) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: 100%;
+    max-width: 400px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: rotateme 15s linear 0s infinite;
+}
+
+.portfolio_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.crypto_portfolio img.image {
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.portfolio_desc_inner .iconleft i {
+    width: 80px;
+    height: 80px;
+    background: var(--main-color);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+.portfolio_desc_inner .crypto_portfolio_title {
+    margin: 0;
+}
+
+.portfolio_paragraf_info {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    color: var(--grey-color);
+}
+
+.portfolio_desc_inner {
+    margin-bottom: 30px;
+    clear: both;
+    display: flex;
+    background: #fff;
+    padding: 20px;
+}
+
+.portfolio_desc_inner:last-child {
+    margin-bottom: 0;
+}
+
+.crypto_portfolio .row {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* =====================
+    .portfolio
+===================== */
+
+/* =====================
+    Team
+===================== */
+.team-social-icon a {
+    width: 36px;
+    height: 36px;
+    line-height: 26px;
+    padding: 5px 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    margin: 0 2px;
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.team-social-icon a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.team-info h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.team-info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.team-info>span {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+    color: var(--grey-color);
+    margin-bottom: 15px;
+}
+
+.home-team .col-lg-2 {
+    width: 20%;
+}
+
+.single-team-box {
+    background: var(--secondary-color);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    box-shadow: 0px 3px 10px 0 rgb(0 0 0 / 5%);
+}
+
+.single-team-box:hover {
+    transform: translateY(-10px);
+}
+
+.single-team-box:hover .team-image {
+    opacity: 0.5;
+}
+
+.single-team-box .team-image {
+    background: var(--primary-color);
+}
+
+/* =====================
+    .Team
+===================== */
+
+/* =====================
+    Popular cryptocurrencies
+===================== */
+.table-responsive td,
+.table-responsive th {
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+}
+
+.table-responsive tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.popular_cryptocurrencies .table-responsive th {
+    background: rgb(0 0 0 / 70%);
+    color: #fff;
+}
+
+table td i {
+    padding-right: 10px;
+}
+
+.popular_cryptocurrencies .table-responsive table {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.home-team .team-outer,
+.popular_cryptocurrencies,
+.home-team {
+    background: var(--secondary-color);
+    padding: 50px 0;
+}
+
+/* =====================
+    .Popular cryptocurrencies
+=====================*/
+
+/* =====================
+    We provide Top Crypto Money Solutions
+===================== */
+.crypto_solution {
+    background: var(--main-color);
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.crypto_solution_block {
+    background: var(--primary-color);
+    color: var(--main-color);
+    border-radius: 5px;
+    padding: 50px 20px;
+    height: 350px;
+}
+
+.crypto_solution_block .icons {
+    font-size: 60px;
+}
+
+.crypto_solution_desc {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-top: 40px;
+}
+
+/* =====================
+    .We provide Top Crypto Money Solutions
+===================== */
+
+/* =====================
+    Need Help
+===================== */
+.help_block .help_info_title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.help_block .help_info_desc {
+    font-size: 15px;
+    color: var(--grey-color);
+    margin-top: 10px;
+}
+
+.help_block {
+    display: flex;
+    background: var(--secondary-color);
+    padding: 20px 25px;
+    box-shadow: 0px 5px 5px 0 rgb(0 0 0 / 5%);
+}
+
+.help_block .icons {
+    margin-right: 20px;
+    margin-top: -40px;
+}
+
+.help_block .icons i {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 40px;
+    background: var(--light-color);
+    color: var(--main-color);
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+}
+
+/* =====================
+    .Need Help
+===================== */
+
+/* =====================
+    Contact Page
+===================== */
+.contact_form form input,
+.contact_form form textarea {
+    background: #f5f5f5;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.company_info .company_section i {
+    background: var(--main-color);
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.company_section {
+    background: var(--secondary-color);
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 7%);
+}
+
+.company_section .title {
+	font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact_form {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+}
+
+.contact_form .contact_title {
+    margin: 0 0 20px 0;
+}
+
+.contact-form-box .forgot_link {
+    color: var(--primary-color);
+}
+
+.contact-form-box .forgot_link:hover {
+    color: var(--main-color);
+}
+
+.contact_inner {
+    align-items: end;
+}
+
+.submitted {
+	display: none;
+	color: #72c02c;
+	margin-top: -15px;
+	margin-bottom: 15px;	
+}
+
+/* =====================
+    .Contact Page
+===================== */
+
+/* =====================
+    breadcrumb
+===================== */
+.breadcrumb {
+    background: url(assets/images/breadcrumb.jpg)no-repeat scroll center center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* =====================
+    .breadcrumb
+===================== */
+
+
+/* =====================
+    Category Sidebar
+===================== */
+.column_right>div {
+    background: var(--secondary-color);
+    margin-bottom: 20px;
+    /*padding: 20px;*/
+    box-shadow: 0px 2px 5px 0 rgb(0 0 0 / 5%);
+}
+
+.blog_sidebar_title h4 {
+    margin: 0 0 20px;
+}
+
+.blog_sidebar_info {
+    padding: 15px 20px;
+}
+
+.blog_sidebar_info ul li {
+    font-size: 16px;
+    padding: 5px 0;
+    display: block;
+}
+
+.blog_sidebar_title h4 {
+    margin: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blog_search_info {
+    padding: 20px;
+}
+
+.blog_tag .blog_sidebar_info span {
+    padding: 5px 10px;
+    background: var(--main-color);
+    margin: 0 5px 7px 0;
+    display: inline-block;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.blog_tag .blog_sidebar_info span:hover {
+    background: var(--secondary-color);
+}
+
+.blog_tag .blog_sidebar_info span:hover a {
+    color: var(--primary-color);
+}
+
+.blog_comment_form .form-control {
+    border: none;
+    background: var(--background-color);
+}
+
+.blog_comment_form {
+    background: var(--secondary-color);
+}
+
+.blog_comment_form form {
+    padding: 0 20px 20px;
+}
+
+/* =====================
+    .Category Sidebar
+===================== */
+
+/* =====================
+    About page
+===================== */
+.counter_live span {
+    margin: 0 5px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.counter_live span.counter_info {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.counter_section {
+    background: var(--main-color);
+    padding: 25px 5px;
+    border-radius: 5px;
+}
+
+.about_desc p {
+    color: #777;
+}
+
+/* =====================
+    .About page
+===================== */
+
+
+/* =====================
+    Login & Register page
+===================== */
+.login_content,
+.dont_account {
+    background: var(--secondary-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.register_policy a {
+    color: var(--primary-color);
+}
+
+.register_policy a:hover {
+    color: var(--main-color);
+}
+
+.register_policy input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.account-register {
+    background: var(--secondary-color);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    padding: 30px;
+}
+
+
+/* =====================
+    .Login page
+===================== */
+
+@media(max-width: 1199px) and (min-width: 768px) {
+    .help_block {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .help_block .icons {
+        margin: -40px auto 20px auto;
+    }
+    .image-logo .img1{
+        margin: 0px;
+        width:40%;
+        height:40%;
+    }
+    .image-logo .img2{
+        margin-left: -60px;
+        width:40%;
+        height:40%;
+    }
+}
+
+@media(max-width: 1199px) {
+    .about_info .col-sm-6 {
+        width: 100%;
+    }
+
+    .about_info .col-sm-6+.col-sm-6 {
+        margin-top: 20px;
+    }
+}
+@media(max-width: 991px) {
+    .cryptco_menu .main-menu-outer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: var(--secondary-color);
+        min-width: 250px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        visibility: hidden;
+        -webkit-transform: translate3d(-280px, 0, 0);
+        transform: translate3d(-280px, 0, 0);
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .cryptco_menu .main-menu-outer.main-menu-active {
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .cryptco_menu .main-menu {
+        text-align: left;
+        padding: 5px;
+    }
+
+    .cryptco_menu .main-menu li {
+        display: block;
+    }
+
+    .cryptco_menu .main-menu li a {
+        color: var(--primary-color);
+    }
+
+    .cryptco_menu .main-menu li {
+        padding: 10px;
+    }
+
+    .cryptco_menu .menu_title {
+        background: var(--main-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .cryptco_menu .menu_title i {
+        float: right;
+        font-size: 24px;
+    }
+
+    .telephone a {
+        float: unset;
+    }
+
+    .phone_menu {
+        text-align: right;
+    }
+
+    #show-themability_megamenu {
+        border: none;
+        border-radius: 5px;
+        background: var(--main-color);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .image-logo {
+        max-width: 100%;
+        width: 70%;
+        height: auto;
+        margin: 100px auto;
+    }
+    .image-logo .img1{
+        margin: 0px;
+        width:40%;
+        height:40%;
+    }
+    .image-logo .img2{
+        margin-left: -70px;
+        width:40%;
+        height:40%;
+    }
+    .margin-tops {
+        margin-top: 50px;
+    }
+
+    .container-text {
+        margin-top: 300px;
+
+    }
+    .container-tweet {
+        width: 100%;
+        float: left;
+    }   
+    .container-answer {
+        width: 80%;
+        float: left;
+    }
+
+    body.active {
+        overflow: hidden;
+    }
+
+    .telephone {
+        margin-right: 20px;
+    }
+
+    .footer_top .col-lg-3.col-sm-6:nth-child(3),
+    .footer_top .col-lg-3.col-sm-6:nth-child(4) {
+        margin-top: 30px;
+    }
+
+    .crypto_portfolio_description {
+        margin-top: 30px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .title-main {
+        text-align: center;
+    }
+
+    .product-title:before {
+        width: 40px;
+        height: 40px;
+        top: -3px;
+        left: -8px;
+    }
+
+    .homepage header {
+        position: relative;
+        background: var(--primary-color);
+    }
+
+    .homepage header.fixed-header {
+        position: fixed;
+        background: rgb(0 0 0 / 70%);
+    }
+
+    .btn,
+    .button {
+        padding: 8px 20px;
+    }
+
+    .slider_text_inner h2 {
+        margin: 20px 0 30px;
+        font-size: 18px;
+    }
+
+    .cd-headline.clip span b {
+        font-size: 18px;
+    }
+
+    .coin-animation .coin-1 {
+        background-size: 23px 23px;
+    }
+
+    .coin-animation .coin-2 {
+        background-size: 34px 34px;
+    }
+
+    .coin-animation .coin-3 {
+        background-size: 27px 27px;
+    }
+
+    .coin-animation .coin-4 {
+        background-size: 15px 15px;
+    }
+
+    .coin-animation .coin-5 {
+        background-size: 20px 20px;
+    }
+
+    .coin-animation .coin-6 {
+        background-size: 25px 25px;
+    }
+
+    .coin-animation .coin-7 {
+        background-size: 35px 35px;
+    }
+
+    .coin-animation .coin-8 {
+        background-size: 32px 32px;
+    }
+
+    .coin-animation .coin-9 {
+        background-size: 37px 37px;
+    }
+
+    .coin-animation .coin-10 {
+        background-size: 22px 22px;
+    }
+
+    .coin-animation .coin-11 {
+        background-size: 37px 37px;
+    }
+
+    .coin-animation .coin-12 {
+        background-size: 17px 17px;
+    }
+
+    .coin-animation .coin-13 {
+        background-size: 45px 45px;
+    }
+
+    @-webkit-keyframes coinanimation {
+        0% {
+            -webkit-transform: translateY(0%) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translateY(-700%) rotate(720deg);
+        }
+    }
+
+    @-webkit-keyframes coinanimationtwo {
+        0% {
+            -webkit-transform: translateY(0%) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translateY(-700%) rotate(-720deg);
+        }
+    }
+
+    .crypto_solution_block {
+        padding: 30px 20px;
+    }
+
+    .column_right {
+        margin-top: 30px;
+    }
+
+    .breadcrumb {
+        font-size: 32px;
+        padding: 40px 10px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+
+    .login_content,
+    .dont_account {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .help_block {
+        margin-bottom: 40px;
+        padding: 15px 15px;
+    }
+    .write_up{
+        width: 100%;
+        float: left;
+        height: 100%;
+    }
+    
+    .mobile_image{
+        width: 100%;
+        float: left;
+    }
+    .mobile_image img{
+        width: 50%;
+        margin-left: 130px; 
+    }
+    .coming_soon{
+        
+        width: 70%;
+        margin: 20px auto;
+        padding :20px;
+    }
+
+    .help_block .icons {
+        margin-right: 15px;
+    }
+    .image-logo .img1{
+        margin: 0px;
+        width:40%;
+        height:40%;
+    }
+    .image-logo .img2{
+        margin-left: -50px;
+        width:40%;
+        height:40%;
+    }
+
+    .slider_text_inner h2 {
+        margin: 20px 0;
+    }
+
+    .mt-50 {
+        margin-top: 30px;
+    }
+
+    .home-team .team-outer,
+    .popular_cryptocurrencies,
+    .home-team,
+    .crypto_solution {
+        padding: 30px 0;
+    }
+
+    .crypto_solution_block {
+        padding: 20px 10px;
+    }
+
+    .crypto_solution_desc {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .counter_live span {
+        font-size: 30px;
+    }
+
+    .counter_section {
+        padding: 20px 5px;
+    }
+
+    .counter_live span.counter_info {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 575px) {
+    .footer_top .col-lg-3.col-sm-6:nth-child(2) {
+        margin-top: 30px;
+    }
+    .write_up{
+        width: 100%;
+        float: left;
+        height: 100%;
+    }
+    
+    .mobile_image{
+        width: 100%;
+        float: left;
+    }
+    .mobile_image img{
+        width: 50%;
+        margin-left: 130px; 
+    }
+    .coming_soon{
+        
+        width: 100%;
+        margin: 20px auto;
+        padding :20px;
+    }
+
+    .single_slider_button a {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+    .slider_text_inner h2 {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .cd-headline.clip span b {
+        font-size: 14px;
+    }
+
+    .slider_text_inner h1 {
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    .logo-left>div {
+        width: 50%;
+    }
+
+    .counter_live .col-sm-4+.col-sm-4 .counter_section {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 480px) {
+    .portfolio_desc_inner {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio_desc_inner .iconleft i {
+        margin: 0 0 15px;
+    }
+
+    .portfolio_img:before {
+        max-width: 260px;
+    }
+    .image-logo .img1{
+        margin: 0px;
+        width:40%;
+        height:40%;
+    }
+    .image-logo .img2{
+        margin-left: -40px;
+        width:40%;
+        height:40%;
+    }
+    .mobile_image img{
+        width: 50%;
+        margin-left: 80px; 
+    }
+}

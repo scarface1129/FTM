@@ -1,7 +1,9 @@
 <?php
 
 session_start();
-
+if (!isset($_SESSION['userid'])) {
+    header("Location: logout.php");
+    exit();}
 include_once 'includes/functions.php';
 include_once 'includes/dbconnection.php';
 
@@ -23,15 +25,15 @@ if (isset($_GET['error']))  {
     } else if ($error == 'insufficientfunds') {
       $error = "You do not have this much in your account to invest";
     } else if($error == 'amountlessthansupportedstarterplan'){
-        $error = "Please enter a value between $100 to $300";
+        $error = "Please enter a value between $100 to $399";
     }else if($error == 'amountlessthansupportedforregularplan'){
-        $error = "Please enter a value between $500 to $4999";
+        $error = "Please enter a value between $400 to $699";
     }else if($error == 'amountlessthansupportedforbusinessplan'){
-        $error = "Please enter a value between $5000 to $14999";
+        $error = "Please enter a value between $700 to $999";
     }else if($error == 'amountlessthansupportedforexecutiveplan'){
-        $error = "Please enter a value between $15000 to $24999";
+        $error = "Please enter a value between $1000 to $4999";
     }else if($error == 'amountlessthansupportedforapexplan'){
-        $error = "Please enter a value between $25000 and Above";
+        $error = "Please enter a value between $5000 and Above";
     }
 }
 ?>
@@ -41,6 +43,7 @@ if (isset($_GET['error']))  {
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/images/FTM.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna-bond - The world's leading investing platform</title>
@@ -102,6 +105,7 @@ if (isset($_GET['error']))  {
         </div>
         <div class="page-info-other invest-page-info-other">
             <p>Invest</p>
+            <p style="color:blue;">Select a plan first</p>
         </div>
     </section>
     <section class="desktop-switch-invest">
@@ -116,7 +120,7 @@ if (isset($_GET['error']))  {
                                 <p>Starter</p>
                                 <div>
                                     <p>$100<span>min</span></p>
-                                    <p>$300<span>max</span></p>
+                                    <p>$399<span>max</span></p>
                                 </div>
                                 <div>
                                     <p>Not Renewable</p>
@@ -137,8 +141,8 @@ if (isset($_GET['error']))  {
                             <div class="invest-plan">
                                 <p>Regular</p>
                                 <div>
-                                    <p>$500<span>min</span></p>
-                                    <p>$4999<span>max</span></p>
+                                    <p>$400<span>min</span></p>
+                                    <p>$699<span>max</span></p>
                                 </div>
                                 <div>
                                     <p>Renewable</p>
@@ -158,8 +162,8 @@ if (isset($_GET['error']))  {
                             <div class="invest-plan">
                                 <p>Business</p>
                                 <div>
-                                    <p>$5000<span>min</span></p>
-                                    <p>$14999<span>max</span></p>
+                                    <p>$700<span>min</span></p>
+                                    <p>$999<span>max</span></p>
                                 </div>
                                 <div>
                                     <p>Renewable</p>
@@ -179,14 +183,14 @@ if (isset($_GET['error']))  {
                             <div class="invest-plan">
                                 <p>Executive</p>
                                 <div>
-                                    <p>$15000<span>min</span></p>
-                                    <p>$24999<span>max</span></p>
+                                    <p>$1000<span>min</span></p>
+                                    <p>$4999<span>max</span></p>
                                 </div>
                                 <div>
                                     <p>Renewable</p>
                                 </div>
                                 <div>
-                                    <p>240 hours Contract</p>
+                                    <p>120 hours Contract</p>
                                     <p>10% Daily ROI</p>
                                     <p>15% Referral commission</p>
                                     <p></p>
@@ -200,14 +204,14 @@ if (isset($_GET['error']))  {
                             <div class="invest-plan">
                                 <p>Apex</p>
                                 <div>
-                                    <p>$25000<span>min</span></p>
+                                    <p>$5000<span>min</span></p>
                                     
                                 </div>
                                 <div>
                                     <p>Renewable</p>
                                 </div>
                                 <div>
-                                    <p>240 hours Contract</p>
+                                    <p>72 hours Contract</p>
                                     <p>15% Daily ROI</p>
                                     <p>25% Referral commission</p>
                                     <p></p>

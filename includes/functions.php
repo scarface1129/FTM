@@ -507,7 +507,7 @@ function investmentAllowed($accountBalance, $investmentAmount) {
 	}
 	return $error;
 }
-function chechStarterPlanStatus($conn){
+function checkStarterPlanStatus($conn){
 	$email = $_SESSION['userid'];
 	$para = 'Activated';
 	$sql4 = "UPDATE Users SET starter_plan = ? WHERE Email = ?;";
@@ -663,23 +663,23 @@ function dailyInvestment($conn){
 		$percent = 0.07;
 		}
 	if($user['InvestmentType'] == 'Executive'){
-		$days = 10;
+		$days = 5;
 		$percent = 0.1;
 		}
 	if($user['InvestmentType'] == 'Apex'){
-		$days = 10;
+		$days = 3;
 		$percent = 0.15;
 		}
 
 		$intrest = $percent * $user['Amount_Funded'];
-		$dailyIntrest = $intrest/$days;
-		$totalEarning = $dailyIntrest + $user['Amount_Earned']; 
+		$ROI = $intrest * $days;
+		$dailyIntrest = $ROI/$days;
+		// $totalEarning = $dailyIntrest + $user['Amount_Earned']; 
 		$id = $user['userId'];
-        $sql = "UPDATE `investmentactive` SET `Amount_Earned_Today` = '$dailyIntrest', Amount_Earned = $totalEarning WHERE userId = '$id';";
+        $sql = "UPDATE `investmentactive` SET `Amount_Earned_Today` = '$dailyIntrest', Amount_Earned = $ROI WHERE userId = '$id';";
 		mysqli_query($conn, $sql);
 
 	}
-	die();
 }
 
 function getRecommitStatus($conn, $email){

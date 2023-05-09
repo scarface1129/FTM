@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Luna-bond - The world's leading investing platform</title>
+     <title>FTM - The world's leading investing platform</title>
      <script src="https://kit.fontawesome.com/a312657ba2.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../assets/css/styles.css">
      <link rel="stylesheet" href="../assets/css/queries.css">
@@ -14,9 +14,9 @@
 
  <body class="body-target body-sign deposit-others">
  <nav class="navbar navbar-mobile nav-txt-colored" role="navigation">
-            <div class="logo-container">
-            <img src="../assets/img/FTMblack.png" alt="FTM" class="alt-color-show" style="margin: 0px;cursor: pointer;" width="40%" height="40%"  onclick="location.href='index.php'" ></img>
-                <img src="../assets/img/FTMletterblack.png" alt="FTM" class="alt-color-show" style="margin-left: -32px;cursor: pointer;" width="40%" height="40%"  onclick="location.href='index.php'" ></img>
+ <div class="logo-container">
+                <img src="../assets/img/FTMblack.png" alt="FTM" class="alt-color-show" style="margin: 0px;cursor: pointer;" width="40%" height="40%"  onclick="location.href='../index.php'" ></img>
+                <img src="../assets/img/FTMletterblack.png" alt="FTM" class="alt-color-show" style="margin-left: -32px;cursor: pointer;" width="40%" height="40%"  onclick="location.href='../index.php'" ></img>
             </div>
             <div id="hamburger-icon" class="hamburger desk-dash-scroll">
                 <i id="icon-switch" class="fas fa-bars menuIcon"></i>

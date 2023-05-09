@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna-bond - The world's leading investing platform</title>
+    <title>FTM - The world's leading investing platform</title>
     <script src="https://kit.fontawesome.com/a312657ba2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/queries.css">
@@ -89,7 +89,7 @@
                             <div class="hidden-box">
                                 <p>
                                     Yes! You can do change some wrong informations. Simply send an email to <a
-                                        href="mailto:support@Luna-bond.com"> support@Luna-bond.com </a> together with the
+                                        href="mailto:support@FTM.com"> support@FTM.com </a> together with the
                                     information needed to be updated.
                                 </p>
                             </div>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Balance are always portrayed on the login screen.
+                                    Balance are always portrayed on the dashboard.
                                     <br>Note! Investments are always deducted from the wallet balance.
                                 </p>
                             </div>
@@ -121,14 +121,14 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    As we are crypto based, with sole focus on BCH, only accepted means of transaction
-                                    is Bitcoin Cash.
+                                    As we are crypto based, with sole focus on BTC, only accepted means of transaction
+                                    is Bitcoin.
                                 </p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">Can I have multiple accounts with Luna-bond?</p>
+                                <p class="text">Can I have multiple accounts with FTM?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -137,8 +137,8 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Each user is assigned one User ID and can only have one account under Luna-bond.
-                                    Investors can only have multiple investments with a maximum of 5 at a time.
+                                    Each user is assigned one User ID and can only have one account under FTM.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                                 <p>
                                     Deposits are processed within 1 hour. Do ensure to send transaction ID, User ID and
                                     an image of confirmed transaction to <a
-                                        href="mailto:deposit@Luna-bond.com">deposit@Luna-bond.com</a> if after 24 hours
+                                        href="mailto:deposit@FTM.com">deposit@FTM.com</a> if after 24 hours
                                     and it's yet to be processed.
                                 </p>
                             </div>
@@ -173,7 +173,7 @@
                                 <p>
                                     Withdrawals are processed within 24 hour. Do ensure to send transaction ID, User ID
                                     and an image of confirmed transaction to <a
-                                        href="mailto:withdrawal@Luna-bond.com">withdrawal@Luna-bond.com</a> if after 24
+                                        href="mailto:withdrawal@FTM.com">withdrawal@FTM.com</a> if after 24
                                     hours and it's yet to be processed.
                                 </p>
                             </div>
@@ -219,7 +219,7 @@
                     <div class="accordion">
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">Who can become an investor in Luna-bond?</p>
+                                <p class="text">Who can become an investor in FTM?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -228,7 +228,7 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Any adult and legally competent can invest in Luna-bond. Individuals that are
+                                    Any adult and legally competent can invest in FTM. Individuals that are
                                     politically exposed are required to submit proper regulations ensuring they do not
                                     use public funds for individual investments.
                                 </p>
@@ -246,7 +246,7 @@
                             <div class="hidden-box">
                                 <p>
                                     Invested funds with it's returns are moved automatically to the USD Wallet upon
-                                    maturity. Investors can then proceed to withdraw funds to their BCH wallet.
+                                    maturity. Investors can then proceed to withdraw funds to their BTC wallet.
                                 </p>
                             </div>
                         </div>
@@ -277,8 +277,8 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    All Investors can only have 5 active investments at a time. One can choose to
-                                    steadily re-invest when one of their investments have matured and funds moved to USD
+                                    All Investors can only have 1 active investments at a time. One can choose to
+                                    steadily re-invest when their investments have matured and funds moved to USD
                                     Wallet.
                                 </p>
                             </div>
@@ -311,9 +311,7 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Invested funds are moved to USD wallets upon maturity. In a case where an investor
-                                    wish to cancel an investment, a 7.3% is deducted from the initially invested amount,
-                                    while the remaining balance is credited into the investors wallet with no profits.
+                                    Invested funds are moved to USD wallets upon maturity. 
                                 </p>
                             </div>
                         </div>
@@ -356,7 +354,7 @@
                     <div class="accordion">
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">What is Luna-bond?</p>
+                                <p class="text">What is FTM?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -365,8 +363,8 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Luna-bond is an exceptional investment company that targets and profits from trading
-                                    Bitcoin Cash. We have continued to deliver excellent service to our 41,000 users
+                                    FTM is an exceptional investment company that targets and profits from trading
+                                    Bitcoin. We have continued to deliver excellent service to over 10,000 users
                                     and counting, helping them manage their investments with simplicity and
                                     transparency. Combined, our users invest millions of dollars every month that they
                                     would have spent.
@@ -375,7 +373,7 @@
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">How long has Luna-bond been operative?</p>
+                                <p class="text">How long has FTM been operative?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -384,14 +382,14 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    Luna-bond has been active for 4 years and more. Our over four years of experience in
+                                    FTM has been active for 4 years and more. Our over four years of experience in
                                     the trading world puts us over the edge against most investment companies.
                                 </p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">Does Luna-bond have a physical office?</p>
+                                <p class="text">Does FTM have a physical office?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -408,7 +406,7 @@
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">Does Luna-bond have a partnership program for Investors?</p>
+                                <p class="text">Does FTM have a partnership program for Investors?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -423,7 +421,7 @@
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">Who manages the funds at Luna-bond?</p>
+                                <p class="text">Who manages the funds at FTM?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -440,7 +438,7 @@
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">How does Luna-bond generate profits for investors?</p>
+                                <p class="text">How does FTM generate profits for investors?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -449,14 +447,13 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    We trade with the help of advice from our veteran analysts with focus on Bitcoin
-                                    Cash.
+                                    We trade with the help of advice from our veteran analysts with focus on Bitcoin.
                                 </p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="accordion-txt-svg">
-                                <p class="text">How long does Luna-bond intend to stay?</p>
+                                <p class="text">How long does FTM intend to stay?</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -465,7 +462,7 @@
                             </div>
                             <div class="hidden-box">
                                 <p>
-                                    As cryptocurrency is here to stay, so is Luna-bond.
+                                    As cryptocurrency is here to stay, so is FTM.
                                 </p>
                             </div>
                         </div>
@@ -480,7 +477,7 @@
                 <p>Can't find your question?</p>
                 <p>Have any more questions?</p>
             </div>
-            <button class="send-btn" onclick="location.href='mailto:support@Luna-bond.com'">
+            <button class="send-btn" onclick="location.href='mailto:support@FTM.com'">
                 Send Email
             </button>
         </div>

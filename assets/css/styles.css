@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #f37027;
+    --main-color: #089bf1;
+    --primary-color: #000;
+    --primary-light-color: #333;
+    --secondary-color: #fff;
+    --light-color: #fbfbfb;
+    --grey-color: #333;
+    --border-color: #ddd;
+    --background-color: #f5f5f5;
 }
-
 body,
 input,
 textarea,
@@ -21,7 +27,7 @@ body {
 
 h1,
 a {
-	color: #f37027;
+	color: #089bf1;
 }
 
 button {
@@ -435,6 +441,7 @@ button {
 
 .luna-plan-price-lvl-txt {
 	font-size: 1.1rem;
+	margin: 10px;
 }
 
 .luna-plan-contract p {
@@ -647,7 +654,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	padding: 1.5em 0.5em;
-	background: linear-gradient(261deg, #f37027, #f370), url(../img/deluvio.jpg);
+	background: linear-gradient(261deg, #089bf1, #f370), url(../img/deluvio.jpg);
 	background-size: cover;
 	background-position: center;
 	border-radius: .6em;
@@ -753,7 +760,7 @@ footer {
 
 .luna-legal {
 	margin-top: 2em;
-	background: #f37027;
+	background: #089bf1;
 	padding-top: .6em;
 	padding-bottom: 1.6em;
 	background-repeat: no-repeat;
@@ -778,7 +785,7 @@ footer {
 }
 
 .faq-page {
-	background: linear-gradient(137deg, #f37027, #f370), url(../img/luna-question.webp);
+	background: linear-gradient(137deg, #089bf1, #f370), url(../img/luna-question.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -952,7 +959,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	padding-top: 2.5em;
-	background: linear-gradient(180deg, rgb(243 112 39 /30%) 0%, rgb(243 112 39 / 64%) 100%), url(../img/Building.jpg);
+	background: linear-gradient(180deg, rgba(13, 96, 216, 0.65) 0%, rgba(5, 50, 114, 0.67) 100%), url(../img/Building.jpg);
 	background-size: cover;
 }
 
@@ -980,7 +987,7 @@ footer {
 }
 
 .signup-logo-main:hover {
-	background-color: #f37027;
+	background-color: #089bf1;
 	transition: 0.2s;
 	fill: var(--primary-color)
 }
@@ -1024,7 +1031,7 @@ footer {
 	margin: .5em 0em 0em 0em;
 	outline: none;
 	border-radius: .3em;
-	border: 1px solid #f37027;
+	border: 1px solid #089bf1;
 	transition: 0.2s;
 }
 
@@ -1083,7 +1090,7 @@ footer {
 }
 
 .create-btn {
-	background-color: #f37027;
+	background-color: #089bf1;
 	color: #fff;
 }
 
@@ -1357,7 +1364,7 @@ footer {
 }
 
 .inv-active-now {
-	background: linear-gradient(113.25deg, #f37027 0%, #0F294E 100%);
+	background: linear-gradient(113.25deg, #089bf1 0%, #0F294E 100%);
 }
 
 .inv-active-now-sub {
@@ -1474,7 +1481,7 @@ footer {
 
 	font-weight: 400;
 
-	color: #f37027;
+	color: #089bf1;
 }
 
 .price-chart-detailed {
@@ -1792,7 +1799,7 @@ footer {
 
 .wag-roll {
 	background: var(--primary-color);
-	border: 5px solid #f37027 !important;
+	border: 5px solid #089bf1 !important;
 	color: #fff;
 	padding: 1em 3.5em;
 	transition: 0.2s;
@@ -2285,7 +2292,7 @@ footer {
 
 .scrolled.fade-in {
 	animation: fade-in 1s ease-in-out both;
-}
+}                                      
 
 .scrolled.fade-in-bottom {
 	animation: fade-in-bottom 1s ease-in-out both;
@@ -2414,7 +2421,7 @@ footer {
 }
 
 .blue-show-scroll {
-	fill: #f37027;
+	fill: #089bf1;
 }
 
 .alt-color-show-scroll {
@@ -2460,7 +2467,7 @@ footer {
 	margin-bottom: 1em;
 	border-radius: 6px;
 	background: #c8deff;
-	color: #f37027;
+	color: #089bf1;
 }
 
 .too-much {

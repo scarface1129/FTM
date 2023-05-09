@@ -14,6 +14,7 @@ if(isset($_POST['invest'])){
 
     $investmentAmount = $_POST['amount'];
     $investmentPlan = $_POST['plan'];
+    $Recommit = $_POST['recommit'];
     // $price = getUsdPrice($conn);
 
     // echo $investmentAmount;
@@ -24,43 +25,47 @@ if(isset($_POST['invest'])){
         header("Location: ../invest.php?error=emptyinput");
         exit();
       }
+      if (empty($investmentPlan)) {
+        header("Location: ../invest.php?error=ChooseInvestmentPlan");
+        exit();
+      }
       if($investmentPlan == 'Starter'){
         $duration = date('Y-m-d', strtotime(' +10 day'));
-          if($investmentAmount < 100 || $investmentAmount > 300){
+          if($investmentAmount < 100 || $investmentAmount > 399){
             header("Location: ../invest.php?error=amountlessthansupportedstarterplan");
             exit();
           }
       }
       if($investmentPlan == 'Regular'){
         $duration = date('Y-m-d', strtotime(' +5 day'));
-          if($investmentAmount < 500 || $investmentAmount > 4999){
+          if($investmentAmount < 400 || $investmentAmount > 699){
             header("Location: ../invest.php?error=amountlessthansupportedforregularplan");
             exit();
           }
       }
       if($investmentPlan == 'Business'){
         $duration = date('Y-m-d', strtotime(' +5 day'));
-        if($investmentAmount < 5000 || $investmentAmount > 14999){
+        if($investmentAmount < 700 || $investmentAmount > 999){
           header("Location: ../invest.php?error=amountlessthansupportedforbusinessplan");
           exit();
         }
     }
     if($investmentPlan == 'Executive'){
       $duration = date('Y-m-d', strtotime(' +10 day'));
-        if($investmentAmount < 15000 || $investmentAmount > 24999){
+        if($investmentAmount < 1000 || $investmentAmount > 4999){
           header("Location: ../invest.php?error=amountlessthansupportedforexecutiveplan");
           exit();
         }
     }
     if($investmentPlan == 'Apex'){
       $duration = date('Y-m-d', strtotime(' +10 day'));
-        if($investmentAmount < 25000){
+        if($investmentAmount < 5000){
           header("Location: ../invest.php?error=amountlessthansupportedforapexplan");
           exit();
         }
     }
     if($investmentPlan == 'Starter'){
-      chechStarterPlanStatus($conn);
+      checkStarterPlanStatus($conn);
     }
     $userExists = userExists($conn, $email);
     $accountBalance = $userExists['AccountBalance'];
@@ -69,10 +74,13 @@ if(isset($_POST['invest'])){
       header("Location: ../invest.php?error=insufficientfunds");
       exit();
     }
-    if(ActiveInvestment($conn)){
-      header("Location: ../invest.php?error=You have an active investment ");
-      exit();
+    if(!$Recommit){
+      if(ActiveInvestment($conn)){
+        header("Location: ../invest.php?error=You have an active investment ");
+        exit();
+      }
     }
+    
     $investmentAmountDollarEquiv = $investmentAmount;
     $investmentActive = "YES";
 
@@ -82,29 +90,7 @@ if(isset($_POST['invest'])){
     echo $duration;
     echo $email;
 
-    if(getRecommitStatus($conn, $email) == 'NO'){
-      $status = 'FIRST';
-      $sql = "UPDATE InvestmentActive SET Amount_Funded = ?, InvestmentType = ?, InvestmentActive = ?, InvestmentDuration = ?, RECOMMITED = ? WHERE Email = ?;";
-      $stmt = mysqli_stmt_init($conn);
-      if (!mysqli_stmt_prepare($stmt, $sql)){
-          header("Location: ../invest.php?stmtfailed");
-          exit();
-      }  
-      mysqli_stmt_bind_param($stmt, "ssssss", $investmentAmountDollarEquiv, $investmentPlan, $investmentActive, $duration, $status, $email);
-      mysqli_stmt_execute($stmt);
-      mysqli_stmt_close($stmt);
-    }elseif(getRecommitStatus($conn, $email) == 'FIRST'){
-      $status = 'YES';
-      $sql = "UPDATE InvestmentActive SET Amount_Funded = ?, InvestmentType = ?, InvestmentActive = ?, InvestmentDuration = ?, RECOMMITED = ? WHERE Email = ?;";
-      $stmt = mysqli_stmt_init($conn);
-      if (!mysqli_stmt_prepare($stmt, $sql)){
-          header("Location: ../invest.php?stmtfailed");
-          exit();
-      }  
-      mysqli_stmt_bind_param($stmt, "ssssss", $investmentAmountDollarEquiv, $investmentPlan, $investmentActive, $duration, $status, $email);
-      mysqli_stmt_execute($stmt);
-      mysqli_stmt_close($stmt);
-    }else{
+    
       $sql = "UPDATE InvestmentActive SET Amount_Funded = ?, InvestmentType = ?, InvestmentActive = ?, InvestmentDuration = ? WHERE Email = ?;";
       $stmt = mysqli_stmt_init($conn);
       if (!mysqli_stmt_prepare($stmt, $sql)){
@@ -114,7 +100,7 @@ if(isset($_POST['invest'])){
       mysqli_stmt_bind_param($stmt, "sssss", $investmentAmountDollarEquiv, $investmentPlan, $investmentActive, $duration, $email);
       mysqli_stmt_execute($stmt);
       mysqli_stmt_close($stmt);
-    };
+  
 
 
     $newAccountBalance = $accountBalance - $investmentAmountDollarEquiv;
@@ -146,6 +132,8 @@ if(isset($_POST['invest'])){
     mysqli_stmt_bind_param($stmt3, "sssssss", $NoId, $userId, $email, $transaction_type, $investmentAmountDollarEquiv, $transaction_status, $investDate);
     mysqli_stmt_execute($stmt3);
     mysqli_stmt_close($stmt3);
+    
+    dailyInvestment($conn);
 
 } else{
     header("Location: ../invest.php?investtocontinue");

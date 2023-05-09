@@ -231,6 +231,7 @@ if (isset($_GET['error']))  {
                     </div>
                 </div>
             </section>
+            <input type="hidden" value='recommit' name='recommit'>
             <section class="content digest-kibble digest-kibble-again">
                 <div class="wag-wag">
                     <button class="btn wag-roll" type="submit" name="invest">Invest</button>

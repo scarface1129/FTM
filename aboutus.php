@@ -53,14 +53,14 @@
                 <h1>So who are we?</h1>
             </div>
             <div class="luna-first">
-                <p class="luna-explain-main-content luna-explain-main-content-about">Luna-Bond is an exceptional investment company that targets and
-                    profits from trading Bitcoin Cash. Bitcoin Cash volatility goes third in hand with the most rated
+                <p class="luna-explain-main-content luna-explain-main-content-about">FTM is an exceptional investment company that targets and
+                    profits from trading Bitcoin. Bitcoin volatility goes third in hand with the most rated
                     crypto Bitcoin, which makes profiting from BCH simple and same time difficult in regards to its
                     volatility, as trading involves profit and loss. But the good thing about investments is there’s a
                     possibility of profit making, which is where we tend to harness. Our four years of experience in the
                     trading world puts us over the edge against most investment companies. Couple with our less
-                    populated target…….Bitcoin Cash.</p>
-                <p class="luna-explain-main-content luna-explain-main-content-about luna-explain-main-content-about-2">4 Years on, we have continued to deliver excellent service to our 41,000 users and counting, helping them manage their investments with simplicity and transparency. Combined, our users invest millions of dollars every month that they would have spent. </p>
+                    populated target…….Bitcoin.</p>
+                <p class="luna-explain-main-content luna-explain-main-content-about luna-explain-main-content-about-2">4 Years on, we have continued to deliver excellent service to over 10,000 users and counting, helping them manage their investments with simplicity and transparency. Combined, our users invest millions of dollars every month that they would have spent. </p>
             </div>
         </section>
     <section class="luna-disclosure luna-disclosure-about">
@@ -76,12 +76,12 @@
         </div>
         <div class="luna-contact-boards">
             <div class="luna-contact-details">
-                <a href="mailto:support@Luna-bond.com" target="_blank">
+                <a href="mailto:support@FTM.com" target="_blank">
                     <div class="luna-address-email-phone">
                         <div class="luna-contact-icon">
                             <i class="fas fa-envelope-open"></i>
                         </div>
-                        <p>support@Luna-bond.com</p>
+                        <p>support@FTM.com</p>
                     </div>
                 </a>
                 <a href="Tel: +66946138602" target="_blank">

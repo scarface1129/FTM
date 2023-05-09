@@ -28,6 +28,7 @@ function dailyInvestment($conn){
 		}
 
 		$intrest = $percent * $user['Amount_Funded'];
+		$ROI = $intrest * 5;
 		$dailyIntrest = $intrest/$days;
 		$totalEarning = $dailyIntrest + $user['Amount_Earned']; 
 		$id = $user['userId'];

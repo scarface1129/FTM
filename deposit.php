@@ -51,6 +51,7 @@ include_once 'includes/dbconnection.php';
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/images/FTM.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna-bond - The world's leading investing platform</title>
@@ -170,7 +171,7 @@ include_once 'includes/dbconnection.php';
         <div class="throw-kibble">
             <p>Enter Manually</p>
             <form action="make-payment.php" method="POST">
-                <input type="hidden" id = 'equi' name='scar'>
+                <input type="hidden" id = 'equi' name='price'>
                 <input type="number" step="0.1" placeholder="Amount" class="number-input" name="depositAmount"
                     id="manual-input">
                 <div class="protein-convert">

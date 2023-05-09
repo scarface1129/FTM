@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div class="luna-contact-details">
-                <a href="mailto:support@Luna-bond.com" target="_blank">
+                <a href="mailto:support@FTM.com" target="_blank">
                     <div class="luna-address-email-phone">
                         <div class="luna-contact-icon">
                             <i class="fas fa-envelope-open"></i>
                         </div>
-                        <p>support@Luna-bond.com</p>
+                        <p>support@FTM.com</p>
                     </div>
                 </a>
                 <a href="Tel: +66946138602" target="_blank">
