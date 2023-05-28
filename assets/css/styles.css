@@ -136,7 +136,7 @@ button {
 
 
 #deposit-chart, #withdraw-chart, #earnings-chart{
-	background: linear-gradient(112.8deg, #95388C 0.63%, #266AA9 100%);
+	background: linear-gradient(112.8deg, #c5bbbb 0.63%, #111316 100%);
 }
 .glance-intro {
 	background: linear-gradient(180deg, rgb(243 112 39 /30%) 0%, rgb(243 112 39 / 64%) 100%), url(../img/Building.jpg);
@@ -1206,8 +1206,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: linear-gradient(138.99deg, #241E62 0%, #279DA6 98.5%);
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 .account-balance-txt {
@@ -1245,7 +1245,7 @@ footer {
 	z-index: 100;
 	border-radius: 32px;
 	/* padding: 1em 1em 2em 1em !important; */
-	background-color: #041F45;
+	background-color: #d2d2d3;
 }
 .tab-main-overview {
 	background-color: #090813 ;
@@ -1258,7 +1258,7 @@ footer {
 	justify-content: space-between;
 	padding: .5em .8em;
 	border-radius: 12px;
-	color: #fff;
+	color: #000;
 	flex: 0 0 auto;
 }
 
@@ -1268,7 +1268,7 @@ footer {
 }
 
 .inv-active {
-	background: linear-gradient(112.8deg, #95388C 0.63%, #266AA9 100%);
+	background: linear-gradient(113.25deg, #e7ebed 0%, #2d2d3c 100%);
 	margin-right: .6em;
 	height: 6em;
 }
@@ -1292,7 +1292,7 @@ footer {
 	border-radius: 4px;
 	margin-bottom: .5em;
 	background: rgba(255, 255, 255, 0.31);
-	color: #fff;
+	color: #000;
 }
 
 .btn-contain-box {
@@ -1346,7 +1346,7 @@ footer {
 
 
 .ab-b p {
-	color: rgba(255, 255, 255, 0.53);
+	color: #000;
 }
 
 .selected-plan {
@@ -1364,11 +1364,11 @@ footer {
 }
 
 .inv-active-now {
-	background: linear-gradient(113.25deg, #089bf1 0%, #0F294E 100%);
+	background: linear-gradient(113.25deg, #e7ebed 0%, #2d2d3c 100%);
 }
 
 .inv-active-now-sub {
-	background: #10305F
+	background: linear-gradient(113.25deg, #e7ebed 0%, #2d2d3c 100%)
 }
 
 .btn-contain-box p {
