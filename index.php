@@ -172,7 +172,6 @@ if(isset( $_GET['ref'] )) {
 			                <div class="portfolio_outer">
 				                <h4 class="crypto_portfolio_title">Fund your account</h4>
 				                <p class="portfolio_paragraf_info">Add funds to your crypto account to start your investment in the crypto world. </p>
-								
 							</div>
 				        </div>
 						<div class="portfolio_desc_inner">
